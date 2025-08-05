@@ -6,7 +6,7 @@ A list of usefules information for use in Azure Devops.
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| ##vso[task.setvariable variable=varName]value | Set a pipelne variable across stesp |  echo "##vso[task.setvariable variable=buildStatus]failed" |
+| ##vso[task.setvariable variable=varName]value | Set a pipelne variable across steps |  echo "##vso[task.setvariable variable=buildStatus]failed" |
 | ##vso[task.setvariable variable=varName;isOutput=true]value | Sets an output variable from a job/task | echo "##vso[task.setvariable variable=result;isOutput=true]success" | 
 | ##vso[task.setprogress value=XX;] | Updates progress bar in UI | echo "##vso[task.setprogress value=30;]Starting tests" | 
 | ##vso[task.complete result=SucceededWithIssues;]message | Marks task as partially succeeded | echo "##vso[task.complete result=SucceededWithIssues;]Minor warnings occurred" | 
